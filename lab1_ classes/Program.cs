@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Reflection;
+using MiniPaintAPI;
+
+
+// static extern bool GetCursorPos(ref Point lp);
+
+
 
 namespace lab1__classes
 {
@@ -11,6 +18,9 @@ namespace lab1__classes
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
+        /// 
+        //[DllImport("mini_paint_api.dll")]
+        //static Assembly SampleAssembly = Assembly.LoadFrom("mini_paint_api.dll");
         [STAThread]
         static void Main()
         {
